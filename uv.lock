@@ -3568,7 +3568,7 @@ plugins = [
 
 [package.metadata]
 requires-dist = [
-    { name = "nomad-elno", marker = "extra == 'plugins'", git = "https://codebase.helmholtz.cloud/DAPHNE4NFDI/elno.git?subdirectory=nomad_elno&rev=cafe5284096ae1066aadc8195497c82b097cbc83#cafe5284096ae1066aadc8195497c82b097cbc83" },
+    { name = "nomad-elno", marker = "extra == 'plugins'", git = "https://codebase.helmholtz.cloud/DAPHNE4NFDI/elno.git?subdirectory=nomad_elno&rev=a71b3c2f0d2ec25b8ba7f2ed199315d89beabe53#a71b3c2f0d2ec25b8ba7f2ed199315d89beabe53" },
     { name = "nomad-lab", extras = ["parsing", "infrastructure"], specifier = ">=1.3.4" },
     { name = "nomad-lab", extras = ["parsing", "infrastructure", "dev"], marker = "extra == 'dev'", specifier = ">=1.3.4" },
     { name = "nomad-normalizer-plugin-system", marker = "extra == 'plugins'", specifier = ">=1.0" },
@@ -3580,7 +3580,7 @@ requires-dist = [
 [[package]]
 name = "nomad-elno"
 version = "0.1.0"
-source = { git = "https://codebase.helmholtz.cloud/DAPHNE4NFDI/elno.git?subdirectory=nomad_elno&rev=cafe5284096ae1066aadc8195497c82b097cbc83#cafe5284096ae1066aadc8195497c82b097cbc83" }
+source = { git = "https://codebase.helmholtz.cloud/DAPHNE4NFDI/elno.git?subdirectory=nomad_elno&rev=a71b3c2f0d2ec25b8ba7f2ed199315d89beabe53#a71b3c2f0d2ec25b8ba7f2ed199315d89beabe53" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
