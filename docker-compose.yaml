@@ -130,7 +130,7 @@ services:
   # nomad remote tools hub (JupyterHUB, e.g. for AI Toolkit)
   north:
     restart: unless-stopped
-    image: ghcr.io/icsp-lks/nomad_icsp:schema_development
+    image: ghcr.io/icsp-lks/nomad_icsp:main
     container_name: nomad_oasis_north
     environment:
       NOMAD_SERVICE: nomad_oasis_north
