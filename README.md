@@ -89,6 +89,12 @@ Below are instructions for how to deploy this NOMAD Oasis distribution
     ```
 
     and then repeat steps 4. and 5. above.
+   
+2. You can remove unused images to free up space by running
+
+    ```sh
+    docker image prune -a
+    ```
 
 #### NOMAD Remote Tools Hub (NORTH)
 
