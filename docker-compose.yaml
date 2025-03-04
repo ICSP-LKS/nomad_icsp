@@ -26,6 +26,7 @@ services:
     environment:
       - ES_JAVA_OPTS=-Xms512m -Xmx512m
       - discovery.type=single-node
+      - xpack.ml.enabled=false
     volumes:
       - elastic:/usr/share/elasticsearch/data
     healthcheck:
@@ -43,7 +44,7 @@ services:
   # the user data db
   mongo:
     restart: unless-stopped
-    image: mongo:5.0.6
+    image: mongo:4.4.6
     container_name: nomad_oasis_mongo
     environment:
       - MONGO_DATA_DIR=/data/db
@@ -199,6 +200,15 @@ services:
         condition: service_healthy
     ports:
       - 80:80
+
+  # jupyterlab image: (this is only used to pull the image, no service is run for this)
+  jupyterlab_image:
+    image: ghcr.io/icsp-lks/nomad_icsp/jupyter:schema_development
+    container_name: nomad_jupyter_image
+    pull_policy: always
+    entrypoint: ["true"]
+    deploy:
+      replicas: 0 # Ensures the service isn't started
 
 volumes:
   mongo:
