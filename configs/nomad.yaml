@@ -2,7 +2,10 @@ services:
   api_host: "localhost"
   api_base_path: "/nomad-oasis"
   upload_limit: 1000000
-  
+
+process:
+  max_upload_size:137438953472
+
 oasis:
   is_oasis: true
   uses_central_user_management: true
