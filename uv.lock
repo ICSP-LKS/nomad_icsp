@@ -3470,8 +3470,8 @@ wheels = [
 
 [[package]]
 name = "nomad-elno"
-version = "0.1.1"
-source = { git = "https://codebase.helmholtz.cloud/DAPHNE4NFDI/elno.git?subdirectory=nomad_elno#66e41a9b43f857618fd309b008afbdd67e0e5e82" }
+version = "0.1.2"
+source = { git = "https://codebase.helmholtz.cloud/DAPHNE4NFDI/elno.git?subdirectory=nomad_elno#969cf8fdd4dcb91356ddcda6bb69d7c673ad091e" }
 dependencies = [
     { name = "nomad-lab" },
     { name = "python-magic-bin", marker = "sys_platform == 'win32'" },
