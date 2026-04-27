@@ -10,12 +10,13 @@ oasis:
   is_oasis: true
   uses_central_user_management: true
 
-north:
-  jupyterhub_crypt_key: "978bfb2e13a8448a253c629d8dd84ff89587f30e635b753153960930cad9d36d"
-  tools:
+plugins:
+#  jupyterhub_crypt_key: "978bfb2e13a8448a253c629d8dd84ff89587f30e635b753153960930cad9d36d"
+  entry_points:
     options:
-      jupyter:
-        image: ghcr.io/icsp-lks/nomad_icsp/jupyter:main
+      nomad_north_jupyter.north_tools:jupyter:
+        north_tool:
+          image: ghcr.io/icsp-lks/nomad_icsp/jupyter:develop_env
 
 meta:
   deployment: "oasis"
@@ -23,7 +24,10 @@ meta:
   maintainer_email: "me@my-oasis.org"
 
 logstash:
-  enable: false
+  enabled: false
+
+temporal:
+  enabled: true
 
 mongo:
   db_name: nomad_oasis_v1
