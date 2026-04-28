@@ -3,7 +3,7 @@ name: Build and publish docker images
 
 on:
   push:
-    branches: ["develop_env"]
+    branches: ["main","develop_env"]
     # Publish semver tags as releases.
     tags: ["v*.*.*"]
   pull_request:

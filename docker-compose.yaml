@@ -24,7 +24,7 @@ services:
   # the user data db
   mongo:
     restart: unless-stopped
-    image: docker.io/mongo:8.0
+    image: docker.io/mongo:7.0
     container_name: nomad_oasis_mongo
     environment:
       - MONGO_DATA_DIR=/data/db
@@ -158,7 +158,7 @@ services:
       replicas: 4
       resources:
         limits:
-          cpus: "4.0" # Maximum 4 CPU cores
+          cpus: "2.0" # Maximum 4 CPU cores
           memory: 8G # Maximum 8GB RAM
       restart_policy:
         condition: on-failure
