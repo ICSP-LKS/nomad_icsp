@@ -29,7 +29,7 @@ repository = "https://github.com/FAIRmat-NFDI/nomad-distro-template"
 [project.optional-dependencies]
 # Add your plugins to the list below.
 plugins = [
-"nomad_elno @ git+https://codebase.helmholtz.cloud/DAPHNE4NFDI/elno.git@artem_dev#subdirectory=nomad_elno",
+"nomad_elno @ git+https://codebase.helmholtz.cloud/DAPHNE4NFDI/elno.git@0912d667a24aeaca1a8b5bf7132a1eabcd0d3f71#subdirectory=nomad_elno",
  "nomad-north-jupyter>=0.2.5"
 ]
 jupyter = ["jupyter-events"]
